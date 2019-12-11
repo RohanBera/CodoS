@@ -24,25 +24,40 @@
         color: lightgray;
         height: 200px;
       }
+
+      #footbar {
+        padding-top: 40px; 
+        padding-bottom: 30px;
+        background-color: #333; 
+        color:lightgray;
+        font-size: large;
+      }
+
+      #footbar a {
+        text-decoration: none;
+      }
     </style>
 
   </head>
 
   <body>
-    <div id="logobar" class="container-fluid">
+
+    <!-- HEADER -->
+    <div id="logobar" class="container-fluid text-center">
       <h1>CodoSepians</h1>
       <h3>Replace this with logo png</h3>
-      <h5>Maybe center this?</h5>
+      <h5>center this vertically, </h5> 
+      <h5>center or left align? see after u get logo</h5>
     </div>
 
     <!-- after 200px (logobar) scrolling, fix navbar to top -->
     <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="200">
       <div class="container-fluid">
-        <div class="navbar-header">
+        <!-- <div class="navbar-header">
           <a class="navbar-brand" href="#">WebSiteName</a>
-        </div>
+        </div> -->
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Teams</a></li>
           <li><a href="#">About</a></li>
@@ -176,5 +191,9 @@
     <br>        
     <br>
 
+    <!-- FOOTER -->
+    <footer id="footbar" class="container-fluid text-center">
+      <p>Powered by <a href="https://www.instagram.com/rohan__ruku/">timepassboys.co</a> </p>
+    </footer>
   </body>
 </html>
