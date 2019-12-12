@@ -1,12 +1,59 @@
 <html>
   <head>
-  
+    <style>
+      .affix {
+        top: 0;
+        width: 100%;
+      }
+
+      .affix + .container-fluid {
+        padding-top: 50px;  
+        /* info shouldnot go under navbar (navbar height = 50px) */
+      }
+    
+      #logobar {
+        background: 
+        linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+        linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, black 25%, transparent 25%),
+        linear-gradient(45deg, black 25%, transparent 25%);	
+        background-size: 2em 2em;
+        background-color: #232323;
+        /* nice pattern */
+
+        color: white;
+        height: 200px;
+      }
+
+      #footbar {
+        padding-top: 40px; 
+        padding-bottom: 30px;
+        background-color: black; 
+        color:lightgray;
+        font-size: large;
+      }
+
+      #footbar a {
+        text-decoration: none;
+      }
+
+      .headshadow {
+        box-shadow: 0px 5px 20px grey;
+      }
+
+      .footshadow {
+        box-shadow: 0px -10px 20px grey;
+      }
+    </style>
 
   </head>
 
   <body>
 
+    <!-- ======================================= -->
     <!-- HEADER -->
+    <!-- ======================================= -->
+
     <div id="logobar" class="container-fluid">
       <p style="padding-top: 40px; font-size: 90px;">CodoSepians</p>
     </div>
@@ -28,10 +75,11 @@
           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
           <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> &nbsp;Login</a></li>
         </ul>
-
       </div>
     </nav>
-      
+
+    <!-- ======================================= -->
+     
     <div class="container-fluid" style="margin-top: 50px;">
       <h3>dummy content</h3>
       <br>
@@ -154,10 +202,15 @@
       
     </div>  
     
-    
+    <!-- ======================================= -->
     <!-- FOOTER -->
+    <!-- ======================================= -->
+
     <footer id="footbar" class="container-fluid text-center footshadow">
       <p>Powered by <b><a href="https://www.instagram.com/rohan__ruku/">timepassboys.co</a></b> </p>
     </footer>
+
+    <!-- ======================================= -->
+
   </body>
 </html>
