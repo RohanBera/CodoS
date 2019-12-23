@@ -86,15 +86,15 @@
 
         <div id="responsiveNavbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a [routerLink]="['/']"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a [routerLink]="['/projects']">Projects</a></li>
-            <li><a [routerLink]="['/teams']">Teams</a></li>
-            <li><a [routerLink]="['/about']">About</a></li>
-            <li><a [routerLink]="['/contact']">Contact</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/']"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/projects']">Projects</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/teams']">Teams</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/about']">About</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/contact']">Contact</a></li>
           </ul>       
           <ul class="nav navbar-nav navbar-right"> 
-            <li><a [routerLink]="['/signin']"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a [routerLink]="['/login']"><span class="glyphicon glyphicon-log-in"></span> &nbsp;Login</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/signin']"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/login']"><span class="glyphicon glyphicon-log-in"></span> &nbsp;Login</a></li>
           </ul>
 
         </div>
