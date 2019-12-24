@@ -6,9 +6,10 @@
         width: 100%;
       }
 
-      .affix + .container-fluid {
+      .affix + .info {
         padding-top: 50px;  
         padding-bottom: 30px;
+        margin-top: 50px;
         /* info shouldnot go under navbar (navbar height = 50px) */
       }
     
@@ -68,7 +69,7 @@
     <!-- ======================================= -->
 
     <div id="logobar" class="container-fluid">
-      <p style="padding-top: 40px; font-size: 90px;">CodoSepians</p>
+      <p style="padding-top: 40px; font-size: 90px;">CodoSapiens</p>
     </div>
 
     <!-- after 200px (logobar) scrolling, fix navbar to top -->
@@ -78,9 +79,7 @@
         <div class="navbar-header">
           <!-- collapsible navbar (for phones) -->
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsiveNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
+            <span style="color: white;" class="glyphicon glyphicon-menu-hamburger"></span>
           </button>
           <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
         </div>
@@ -104,7 +103,7 @@
 
     <!-- ======================================= -->
      
-    <div class="container-fluid" style="margin-top: 50px;">
+    <div class="container-fluid">
       <router-outlet></router-outlet>
       
     </div>  
